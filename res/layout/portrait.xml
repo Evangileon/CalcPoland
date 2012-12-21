@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView  
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:text="@string/copyright" android:gravity="fill"/>
+	<EditText 
+		android:id="@+id/Result" 
+		android:lines="2" 
+		android:layout_width="fill_parent" 
+		android:layout_height="80sp" 
+		android:editable="false"
+		android:inputType="number|numberSigned" android:textSize="50sp" android:gravity="right" android:scrollbars="horizontal" android:cursorVisible="false">
+	</EditText>
+
+	<TableLayout 
+		android:id="@+id/Keyboard" 
+		 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:shrinkColumns="0,1,2,3,4">
+		<TableRow 
+			android:id="@+id/TableRow01" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_column="0">
+			
+			<Button android:layout_width="55sp" 
+				android:text="mc" 
+				android:id="@+id/Button_mc" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginTop="6sp" android:layout_marginLeft="10sp" android:layout_height="50sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="m+" 
+				android:id="@+id/Button_mplus" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginTop="6sp" android:layout_height="50sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="m-" 
+				android:id="@+id/Button_mminus" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginTop="6sp" android:layout_height="50sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="mr" 
+				android:id="@+id/Button_mr" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginTop="6sp" android:layout_marginRight="10sp" android:layout_height="50sp">
+			</Button>
+		</TableRow>
+		
+		<TableRow 
+			android:id="@+id/TableRow02" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_column="1">
+			
+			<Button android:layout_width="55sp" 
+				android:text="C" 
+				android:id="@+id/Button_C" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginLeft="10sp" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="+/-" 
+				android:id="@+id/Button_un" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="/" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:id="@+id/Button_divide" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="*" 
+				android:id="@+id/Button_multi" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginRight="10sp" android:layout_height="45sp">
+			</Button>
+		</TableRow>
+		
+		<TableRow 
+			android:id="@+id/TableRow03" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_column="2">
+			
+			<Button android:layout_width="55sp" 
+				android:text="7" 
+				android:id="@+id/Button_7" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginLeft="10sp" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="8" 
+				android:id="@+id/Button_8" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="9" 
+				android:id="@+id/Button_9" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="-" 
+				android:id="@+id/Button_minus" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginRight="10sp" android:layout_height="45sp">
+			</Button>
+		</TableRow>
+		
+		<TableRow 
+			android:id="@+id/TableRow04" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_column="3">
+			
+			<Button android:layout_width="55sp" 
+				android:text="4" 
+				android:id="@+id/Button_4" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginLeft="10sp" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="5" 
+				android:id="@+id/Button_5" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="6" 
+				android:id="@+id/Button_6" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_height="45sp">
+			</Button>
+			
+			<Button android:layout_width="55sp" 
+				android:text="+" 
+				android:id="@+id/Button_plus" 
+				android:textSize="20sp" 
+				android:focusable="true" 
+				android:layout_weight="1" android:layout_marginRight="10sp" android:layout_height="45sp">
+			</Button>
+		
+
+</TableRow>
+		
+		
+		
+		
+	
+</TableLayout>
+</LinearLayout>
